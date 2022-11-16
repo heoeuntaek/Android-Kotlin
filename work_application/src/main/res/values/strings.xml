@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Select Radio Button</string>
+    <string-array name="colors">
+        <item>빨강색</item>
+        <item>초록색</item>
+        <item>파랑색</item>
+    </string-array>
+
+
+    <string name="app_name2">Select Check Box</string>
+    <string-array name="coffee_menus">
+        <item>Americano</item>
+        <item>Latte</item>
+        <item>Decaf</item>
+    </string-array>
+
+
+</resources>

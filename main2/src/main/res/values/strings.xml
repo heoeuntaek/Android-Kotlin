@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Select Radio Button</string>
+    <string-array name="colors">
+        <item>빨강색</item>
+        <item>초록색</item>
+        <item>파랑색</item>
+    </string-array>
+
+
+    <string name="app_name2">Select Check Box</string>
+    <string-array name="coffee_menus">
+        <item>Americano</item>
+        <item>Latte</item>
+        <item>Decaf</item>
+    </string-array>
+
+
+    <string name="app_name3">Exchange Rate</string>
+    <string name="exchange_rate">1296.3</string>
+    <string name="convert_amount">환전 금액(원)</string>
+    <string name="convert_button">환전</string>
+
+    <string name="resource1">Starry Night(별이 빛나는 밤)</string>
+    <string name="resource2">1889년 제작</string>
+    <string name="resource3">Vincent van Gogh</string>
+    <string name="text_message">dfd</string>
+
+
+</resources>
