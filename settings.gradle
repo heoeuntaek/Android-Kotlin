@@ -13,6 +13,8 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "My Application"
-include ':app'
 include ':work_application'
 include ':main2'
+include ':ch7'
+include ':practice'
+include ':ch12'

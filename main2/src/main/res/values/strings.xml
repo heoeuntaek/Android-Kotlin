@@ -25,5 +25,12 @@
     <string name="resource3">Vincent van Gogh</string>
     <string name="text_message">dfd</string>
 
+    <!--    10- 라이프사이클-->
+    <string name="app_name4">Lifecycle Example</string>
+    <string name="message_portrait">세로방향</string>
+    <string name="message_landscape">가로방향</string>
+    <string name="btn_confirm">확인</string>
+    <string name="message_hint">이름을 입력하세요</string>
+
 
 </resources>
