@@ -11,4 +11,30 @@
         <item>290.0</item>
         <item>-0.24</item>
     </string-array>
+    <string-array name="planets_array">
+        <item>수성(Mercury)</item>
+        <item>금성(Venus)</item>
+        <item>지구(Earth)</item>
+        <item>화성(Mars)</item>
+        <item>목성(Jupiter)</item>
+        <item>토성(Saturn)</item>
+        <item>천왕성(Uranus)</item>
+        <item>명왕성(Neptune)</item>
+    </string-array>
+
+    <string name="app_na2me">Select Radio Button</string>
+    <string-array name="colors4">
+        <item>빨강색</item>
+        <item>초록색</item>
+        <item>파랑색</item>
+    </string-array>
+
+
+    <string name="app_name23">Select Check Box</string>
+    <string-array name="coffee_menus">
+        <item>Americano</item>
+        <item>Latte</item>
+        <item>Decaf</item>
+    </string-array>
+
 </resources>

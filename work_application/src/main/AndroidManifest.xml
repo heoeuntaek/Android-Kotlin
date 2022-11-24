@@ -9,14 +9,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileSoftware">
         <activity
-            android:name=".MainActivity2"
+            android:name=".MainActivity3"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".CheckBox"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Spinner"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.ads.RadioButton"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"

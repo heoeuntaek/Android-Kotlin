@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ch10</string>
+    <string name="app_name2">Lifecycle Example</string>
+    <string name="message_portrait">세로방향</string>
+    <string name="message_landscape">가로방향</string>
+    <string name="btn_confirm">확인</string>
+    <string name="message_hint">이름을 입력하세요</string>
+</resources>

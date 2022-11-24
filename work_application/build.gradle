@@ -1,11 +1,15 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android-extensions'
 }
 
 android {
     namespace 'com.example.work_application'
     compileSdk 32
+    viewBinding{
+        enabled=true
+    }
 
     defaultConfig {
         applicationId "com.example.work_application"
