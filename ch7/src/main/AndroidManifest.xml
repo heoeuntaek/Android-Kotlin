@@ -38,6 +38,13 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".CheckBox"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ResourcesToArray"
             android:exported="true">
             <intent-filter>
