@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ch11</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="app_name2">Fragment Sample</string>
+    <string name="fragmentA_name">Fragment A</string>
+    <string name="fragmentB_name">Fragment B</string>
+
+    <string-array name="fruits">
+        <item>Apple</item>
+        <item>Apricot</item>
+        <item>Avocado</item>
+        <item>Banana</item>
+        <item>Blackberry</item>
+        <item>Blueberry</item>
+        <item>Cherry</item>
+        <item>Coconut</item>
+        <item>Cranberry</item>
+        <item>Grape raisin</item>
+        <item>Honey dew</item>
+        <item>Jack fruit</item>
+        <item>Lemon</item>
+        <item>Lime</item>
+        <item>Mango</item>
+        <item>watermelon</item>
+    </string-array>
+</resources>
