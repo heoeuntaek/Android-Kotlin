@@ -16,7 +16,7 @@ class CheckBox : AppCompatActivity() {
             Log.d("d","thisis"+isChecked.toString())
         }
 
-        checkBox.isChecked=true
+        checkBox.isChecked=false
 
 
     }
