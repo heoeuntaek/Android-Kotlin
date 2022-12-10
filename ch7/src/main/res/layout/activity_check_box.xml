@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="60dp"
         android:checked="true"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,20 +37,10 @@
         tools:text="Americano" />
 
     <CheckBox
-        android:id="@+id/latteCheckBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/americanoCheckBox"
-        app:layout_constraintTop_toBottomOf="@+id/americanoCheckBox"
-        tools:text="Latte" />
-
-    <CheckBox
         android:id="@+id/decafCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/latteCheckBox"
         app:layout_constraintTop_toBottomOf="@+id/latteCheckBox"
@@ -60,11 +50,82 @@
         android:id="@+id/selectButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="44dp"
         android:text="선택"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/decafCheckBox" />
+
+    <CheckBox
+        android:id="@+id/latteCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/americanoCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/americanoCheckBox"
+        tools:text="Latte" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="28dp"
+        android:text="Item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="198dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="105dp"
+        android:text="Qty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editAme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="78dp"
+        android:ems="3"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/americanoCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/editDec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="78dp"
+        android:ems="3"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/decafCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/editLat" />
+
+    <EditText
+        android:id="@+id/editLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="77dp"
+        android:ems="3"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/latteCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/editAme" />
 </androidx.constraintlayout.widget.ConstraintLayout>
