@@ -11,13 +11,5 @@ class CheckBox : AppCompatActivity() {
         setContentView(R.layout.activity_check_box)
 
 
-        checkBox.setOnCheckedChangeListener { buttonView, isChecked ->
-            println("haha"+isChecked)
-            Log.d("d","thisis"+isChecked.toString())
-        }
-
-        checkBox.isChecked=false
-
-
     }
 }

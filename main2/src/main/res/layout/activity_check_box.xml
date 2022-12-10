@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,35 +8,63 @@
     tools:context=".CheckBox">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
+        android:id="@+id/textView"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:background="#964b00"
-        android:gravity="start"
-        android:text="Please select a menu"
+        android:layout_marginTop="40dp"
+        android:background="#ff993300"
+        android:text="  Please select a menu"
         android:textColor="@color/white"
-        android:textSize="18dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="161dp" />
-
-    <TextView
-        android:id="@+id/textView4"
+    <CheckBox
+        android:id="@+id/americanoCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Item"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="196dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:checked="true"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:text="Americano" />
 
-    <TextView
-        android:id="@+id/textView3"
+    <CheckBox
+        android:id="@+id/latteCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Qty"
-        tools:layout_editor_absoluteX="245dp"
-        tools:layout_editor_absoluteY="196dp" />
+        android:layout_marginTop="24dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/americanoCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/americanoCheckBox"
+        tools:text="Latte" />
+
+    <CheckBox
+        android:id="@+id/decafCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/latteCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/latteCheckBox"
+        tools:text="Decaf" />
+
+    <Button
+        android:id="@+id/selectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="선택"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/decafCheckBox" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
