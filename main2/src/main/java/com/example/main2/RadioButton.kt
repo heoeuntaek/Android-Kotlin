@@ -3,6 +3,7 @@ package com.example.main2
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_radio_button.*
 
@@ -18,10 +19,30 @@ class RadioButton : AppCompatActivity() {
 
 
         val lis = RadioListener();
-        radioRed.setOnLongClickListener(lis)
-        radioBlue.setOnLongClickListener(lis)
-        radioGreen.setOnLongClickListener(lis)
+//        radioRed.setOnClickListener(lis)
+//        radioGreen.setOnClickListener(lis)
+//        radioBlue.setOnClickListener(lis)
 
+
+        btnGroup.setOnCheckedChangeListener { group, checkedId ->
+            var sb = StringBuilder();
+            var rdButton = findViewById<android.widget.RadioButton>(checkedId)
+            sb.append(rdButton.text)
+            Toast.makeText(applicationContext,sb.toString(),Toast.LENGTH_SHORT).show()
+            when (checkedId) {
+                R.id.radioRed -> root.setBackgroundColor(Color.parseColor("#ff0000"))
+                R.id.radioBlue -> root.setBackgroundColor(Color.parseColor("#0067a3"))
+                R.id.radioGreen -> root.setBackgroundColor(Color.parseColor("#008000"))
+                else -> 0
+
+//            Toast.makeText(applicationContext, sb.toString(), Toast.LENGTH_SHORT).show()
+            }
+        }
+//        btn_select.setOnClickListener {
+//            if (radioRed.isChecked==true) root.setBackgroundColor(Color.parseColor("#ff0000"))
+//            if (radioBlue.isChecked==true)root.setBackgroundColor(Color.parseColor("#0067a3"))
+//            if (radioGreen.isChecked==true)root.setBackgroundColor(Color.parseColor("#008000"))
+//        }
 //        LinearLayout 1page;
 
 
@@ -40,7 +61,7 @@ class RadioButton : AppCompatActivity() {
     }
 
 
-    inner class RadioListener : View.OnClickListener, View.OnLongClickListener {
+    inner class RadioListener : View.OnClickListener {
         override fun onClick(v: View?) {
             if (v == null) return
             var sb = StringBuilder()
@@ -53,11 +74,6 @@ class RadioButton : AppCompatActivity() {
 //            Toast.makeText(applicationContext, sb.toString(), Toast.LENGTH_SHORT).show()
             }
         }
-
-        override fun onLongClick(p0: View?): Boolean {
-            TODO("Not yet implemented")
-        }
-
 
     }
 

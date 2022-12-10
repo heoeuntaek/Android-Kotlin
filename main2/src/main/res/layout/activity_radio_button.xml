@@ -21,46 +21,53 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="161dp" />
 
-    <RadioButton
-        android:id="@+id/radioRed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="200dp"
-        android:text="Red"
-        android:textColor="#ff0000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <RadioButton
-        android:id="@+id/radioBlue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        android:text="Blue"
-        android:textColor="#0067a3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioRed" />
-
-    <RadioButton
-        android:id="@+id/radioGreen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        android:text="Green"
-        android:textColor=" #008000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioBlue" />
-
     <Button
         android:id="@+id/btn_select"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="265dp"
         android:text="Select"
         android:textAllCaps="false"
-        tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="418dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/btnGroup"
+        android:layout_width="166dp"
+        android:layout_height="475dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="25dp">
+
+        <RadioButton
+            android:id="@+id/radioRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="200dp"
+            android:text="Red"
+            android:textColor="#ff0000" />
+
+        <RadioButton
+            android:id="@+id/radioBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Blue"
+            android:textColor="#0067a3" />
+
+        <RadioButton
+            android:id="@+id/radioGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Green"
+            android:textColor=" #008000" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

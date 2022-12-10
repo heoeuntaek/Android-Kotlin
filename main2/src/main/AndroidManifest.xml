@@ -100,7 +100,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".CheckBox2"
+            android:name=".CheckBox"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
