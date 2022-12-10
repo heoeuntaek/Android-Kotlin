@@ -23,6 +23,7 @@ class RecyclerView : AppCompatActivity() {
 //
 //    )
 
+
     var DataListRecycle = arrayListOf(
         DataRecycle(R.drawable.chuu, "0번"),
         DataRecycle(R.drawable.chuu, "1번"),

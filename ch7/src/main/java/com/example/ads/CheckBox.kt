@@ -35,16 +35,17 @@ class CheckBox : AppCompatActivity() {
 
             if (americanoCheckBox.isChecked) {
                 sb.append(americanoCheckBox.text)
-                sb.append("${editAme.text.toString()} 잔 주문")
+                sb.append(" ${editAme.text.toString()} 잔 주문 \n")
+
             }
 
             if (latteCheckBox.isChecked) {
                 sb.append(latteCheckBox.text)
-                sb.append("${editLat.text.toString()} 잔 주문")
+                sb.append(" ${editLat.text.toString()} 잔 주문 \n")
             }
             if (decafCheckBox.isChecked) {
                 sb.append(decafCheckBox.text)
-                sb.append("${editDec.text.toString()} 잔 주문")
+                sb.append(" ${editDec.text.toString()} 잔 주문 \n")
             }
 
             Toast.makeText(applicationContext, sb.toString(), Toast.LENGTH_SHORT).show()
