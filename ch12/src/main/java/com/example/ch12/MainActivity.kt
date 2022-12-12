@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var prevButton: Button
     private lateinit var hintButton: Button
     private lateinit var hintTextView: TextView
-    private var hintReferred:Boolean = false
+    private var hintReferred: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,8 +57,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         hintButton.setOnClickListener {
-            val intent = HintActivity.newIntent(this@MainActivity,
-                wordViewModel.curIndex)
+            val intent = HintActivity.newIntent(
+                this@MainActivity,
+                wordViewModel.curIndex
+            )
             startForResult.launch(intent)
         }
 
@@ -77,7 +79,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private val startForResult = registerForActivityResult(
-        ActivityResultContracts.StartActivityForResult())
+        ActivityResultContracts.StartActivityForResult()
+    )
     { result: ActivityResult ->
         if (result.resultCode == Activity.RESULT_OK) {
             hintReferred = result.data?.getBooleanExtra(EXTRA_HINT_SHOWN, false) ?: false
@@ -97,8 +100,7 @@ class MainActivity : AppCompatActivity() {
         } else {
             resources.getString(R.string.wrong_ans_msg)
         }
-        Toast.makeText(this, message, Toast.LENGTH_SHORT)
-            .show()
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 
     private fun updateWordQuiz() {

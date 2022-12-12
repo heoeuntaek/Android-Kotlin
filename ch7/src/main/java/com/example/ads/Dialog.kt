@@ -46,18 +46,18 @@ class Dialog : AppCompatActivity() {
 //                    mSelect = which
 //                }
 
-                .setMultiChoiceItems(
-                    items,
-                    null,
-                    object : DialogInterface.OnMultiChoiceClickListener {
-                        override fun onClick(
-                            dialog: DialogInterface?,
-                            which: Int,
-                            isChecked: Boolean
-                        ) {
-                            checked[which] = isChecked
-                        }
-                    })
+//                .setMultiChoiceItems(
+//                    items,
+//                    null,
+//                    object : DialogInterface.OnMultiChoiceClickListener {
+//                        override fun onClick(
+//                            dialog: DialogInterface?,
+//                            which: Int,
+//                            isChecked: Boolean
+//                        ) {
+//                            checked[which] = isChecked
+//                        }
+//                    })
 
                 .setMultiChoiceItems(
                     items,
@@ -73,19 +73,21 @@ class Dialog : AppCompatActivity() {
 //                    }
 //                })
 
-                .setPositiveButton("Select") { _, _ ->
-                    Toast.makeText(
-                        applicationContext,
-                        "${items[mSelect]} is selected",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
+                    //single item 용
+//                .setPositiveButton("Select") { _, _ ->
+//                    Toast.makeText(
+//                        applicationContext,
+//                        "${items[mSelect]} is selected",
+//                        Toast.LENGTH_SHORT
+//                    ).show()
+//                }
 
+                //multi item 용
                 .setPositiveButton("Select") { _, _ ->
                     var sb = StringBuffer()
-                    for (i in checked.indices) {
-                        if (checked[i]) {
-                            sb.append("${items[i]}, ")
+                    for (which in checked.indices) {
+                        if (checked[which]) {
+                            sb.append("${items[which]}, ")
                         }
                     }
 

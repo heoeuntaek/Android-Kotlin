@@ -16,6 +16,7 @@ class ResourcesToArray : AppCompatActivity() {
 
         var btn = findViewById<Button>(R.id.btn1)
         var tv = findViewById<TextView>(R.id.txt1)
+
         btn.setOnClickListener {
             var strArr: Array<String> =resources.getStringArray(R.array.colors)
             var strArr2: Array<String> = Array(strArr.size){i->strArr[i]}

@@ -32,7 +32,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/hintButton"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        android:drawableRight="@drawable/arrow_right"/>
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -100,7 +101,8 @@
         app:layout_constraintEnd_toStartOf="@+id/hintButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        android:drawableLeft="@drawable/arrow_left"/>
 
     <Button
         android:id="@+id/hintButton"

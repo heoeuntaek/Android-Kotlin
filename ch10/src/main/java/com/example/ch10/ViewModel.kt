@@ -15,8 +15,11 @@ class ViewModel : AppCompatActivity() {
         setContentView(R.layout.activity_view_model)
 
 
+
+
         val dataViewModel =
             ViewModelProvider(this)[CommonDataViewModel::class.java]
+//            ViewModelProvider(this).get(CommonDataViewModel::class.java)
         var nameEditText: EditText = findViewById(R.id.nameEditText)
         var confirmButton: Button = findViewById(R.id.confirmButton)
         Log.d(TAG, "onCreate() 호출")

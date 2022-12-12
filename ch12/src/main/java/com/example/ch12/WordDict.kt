@@ -1,6 +1,6 @@
 package com.example.ch12
 
-data class WordDict (
+data class WordDict(
     val word1: String,
     val word1meaning: String,
     val word2: String,

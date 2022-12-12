@@ -22,13 +22,13 @@ class Dialog : AppCompatActivity() {
             var builder = AlertDialog.Builder(this@Dialog)
                 .setTitle("색상 선택")
 //                .setSingleChoiceItems(colorArr, checkedId,
-//                    object : OnClickListener {
+//                    object : DialogInterface.OnClickListener {
 //                        override fun onClick(d: DialogInterface?, which: Int) {
 //                            checkedId = which
 //
 //                        }
 //                    })
-                //string builder 0- 출력 내용이 많을때 사용
+//                string builder 0- 출력 내용이 많을때 사용
                 .setMultiChoiceItems(colorArr, checkedArr,
                     object : DialogInterface.OnMultiChoiceClickListener {
                         override fun onClick(
@@ -54,13 +54,14 @@ class Dialog : AppCompatActivity() {
                     var s: String = ""
                     checkedArr.forEachIndexed { index, b ->
                         if (b)
-                            s += "colorArr[index]"
+                            s += colorArr[index]+"\n"
                         if (s.isNotEmpty()) {
-                            showToast("선택항목은 $b")
+                            showToast("${colorArr[index]} 선택항목은 $b")
                         } else
                             showToast("please select colors")
 
                     }
+                    showToast(s)
                 }
 
 

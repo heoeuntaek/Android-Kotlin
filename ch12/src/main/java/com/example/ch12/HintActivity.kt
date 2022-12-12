@@ -50,9 +50,12 @@ class HintActivity : AppCompatActivity() {
         backButton = findViewById(R.id.backButton)
 
         backButton.setOnClickListener {
-            val data = Intent().apply {
-                putExtra(EXTRA_HINT_SHOWN, true)
-            }
+//            val data = Intent().apply {
+//                putExtra(EXTRA_HINT_SHOWN, true)
+//            }
+            val data = Intent()
+            data.putExtra(EXTRA_HINT_SHOWN, true)
+
             setResult(Activity.RESULT_OK, data)
             finish()
         }

@@ -3,6 +3,7 @@ package com.example.ch12
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModel
+
 class WordViewModel : ViewModel() {
 
     var curIndex = 0

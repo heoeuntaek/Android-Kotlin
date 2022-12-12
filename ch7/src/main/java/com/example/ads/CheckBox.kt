@@ -28,6 +28,10 @@ class CheckBox : AppCompatActivity() {
 
         selectButton.setOnClickListener {
             var sb = StringBuilder()
+            nothingSelected = true
+            case=  false
+
+
 
             if (americanoCheckBox.isChecked) {
                 sb.append(americanoCheckBox.text)
@@ -51,9 +55,9 @@ class CheckBox : AppCompatActivity() {
 
 
 
-            if (!americanoCheckBox.isChecked && editAme != null) case = true
-            if (!latteCheckBox.isChecked && editLat != null) case = true
-            if (!decafCheckBox.isChecked && editDec != null) case = true
+            if (!americanoCheckBox.isChecked && editAme.text.isNotEmpty()) case = true
+            if (!latteCheckBox.isChecked && editLat.text.isNotEmpty() ) case = true
+            if (!decafCheckBox.isChecked && editDec.text.isNotEmpty()) case = true
 
 
             if (nothingSelected) {

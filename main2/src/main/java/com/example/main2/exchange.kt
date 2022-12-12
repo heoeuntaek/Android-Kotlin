@@ -53,9 +53,9 @@ class exchange : AppCompatActivity() {
 //        })
 
         // 람다식 변환 아래로
-        wonEditText.setOnEditorActionListener{v, actionId, event ->
+        wonEditText.setOnEditorActionListener{textView, actionId, event ->
             if (actionId == EditorInfo.IME_ACTION_DONE || actionId ==EditorInfo.IME_ACTION_SEND) {
-                exchangeCurrency(v?.text.toString())
+                exchangeCurrency(textView?.text.toString())
                 Toast.makeText(applicationContext, wonEditText.text, Toast.LENGTH_LONG).show()
                 true
 
@@ -74,6 +74,7 @@ class exchange : AppCompatActivity() {
             bgId.setBackgroundColor(bgColor)
 
             val color = ContextCompat.getColor(this, R.color.color_textview)
+
             val textSizeDP = resources.getDimension(R.dimen.textview_size)
             var amountTextView: TextView = findViewById(R.id.amountTextView)
             amountTextView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, textSizeDP)
